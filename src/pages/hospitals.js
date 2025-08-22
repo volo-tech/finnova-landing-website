@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import KeyBenefits from "../components/KeyBenefits";
-import Testimonials from "../components/Testimonials";
+import KeyBenefits from "../components/KeyBenefits-Hospital";
+import Testimonials from "../components/Testimonials-Hospital";
 import HowToApply from "../components/HowToApply";
 import AboutUs from "../components/AboutUs";
 import ContactForm from "../components/ContactForm";
@@ -28,7 +28,7 @@ function App() {
         <Hero />
         <ContactForm />
         <KeyBenefits />
-        <Testimonials />
+        <Testimonials/>
         <HowToApply />
         <Logos />
         <AboutUs />
