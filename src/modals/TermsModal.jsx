@@ -10,11 +10,13 @@ export default function TermsModal({ onClose }) {
           ✕
         </button>
 
+        
         {/* Title */}
-        <h2 className="text-xl font-semibold mb-2">
-          Terms & Conditions – Finnova
+        
+        <h2 className="text-xl font-semibold mb-2 border-b border-gray-300">
+          Terms & Conditions
         </h2>
-        <p className="text-xs text-gray-500 mb-4">Last Updated: [Date]</p>
+        {/* <p className="text-xs text-gray-500 mb-4">Last Updated: [Date]</p> */}
 
         {/* Content */}
         <div className="max-h-[70vh] overflow-y-auto text-sm text-gray-700 space-y-5 leading-relaxed">

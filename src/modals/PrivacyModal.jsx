@@ -11,7 +11,9 @@ export default function PrivacyModal({ onClose }) {
         </button>
 
         {/* Title */}
-        <h2 className="text-xl font-semibold mb-4">Privacy Policy</h2>
+        <h2 className="text-xl font-semibold mb-4 border-b border-gray-300">
+          Privacy Policy
+        </h2>
 
         {/* Content */}
         <div className="max-h-[70vh] overflow-y-auto text-sm text-gray-700 space-y-5 leading-relaxed">
