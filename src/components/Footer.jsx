@@ -1,4 +1,12 @@
+"use client";
+import { useState } from "react";
+import TermsModal from "../modals/TermsModal";
+import PrivacyModal from "../modals/PrivacyModal";
+
 export default function Footer() {
+  const [showTerms, setShowTerms] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
+
   return (
     <footer id="footer" className="bg-lightGray text-black py-8">
       <div className="container mx-auto px-4">
@@ -23,16 +31,24 @@ export default function Footer() {
           {/* Right Section */}
           <ul className="flex flex-col md:flex-row gap-3 md:gap-6 text-sm text-secondaryBlue">
             <li>
-              <a href="#" className="hover:text-lightBlue">
+              <button
+                onClick={() => setShowTerms(true)}
+                className="hover:text-lightBlue"
+              >
                 Terms of Use
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="hover:text-lightBlue">
+              <button
+                onClick={() => setShowPrivacy(true)}
+                className="hover:text-lightBlue"
+              >
                 Privacy Policy
-              </a>
+              </button>
             </li>
           </ul>
+
+          {/* Disclaimer */}
           <p className="text-gray-500 text-xs leading-relaxed">
             *All financing is subject to eligibility criteria, verification, and
             approval. Terms and conditions apply. The information provided is
@@ -40,6 +56,10 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
+      {/* Modals */}
+      {showTerms && <TermsModal onClose={() => setShowTerms(false)} />}
+      {showPrivacy && <PrivacyModal onClose={() => setShowPrivacy(false)} />}
     </footer>
   );
 }
