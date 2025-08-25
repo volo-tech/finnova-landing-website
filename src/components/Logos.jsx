@@ -6,19 +6,19 @@ import Image from "next/image";
 export default function Logos() {
   const testimonials = [
     {
-      logo: "/hospitalLogos/1.png",
+      logo: "/hospitalLogos/1.webp",
       alt: "hospital1",
     },
     {
-      logo: "/hospitalLogos/2.jpg",
+      logo: "/hospitalLogos/2.webp",
       alt: "hospital2",
     },
     {
-      logo: "/hospitalLogos/3.png",
+      logo: "/hospitalLogos/3.webp",
       alt: "hospital3",
     },
     {
-      logo: "/hospitalLogos/4.png",
+      logo: "/hospitalLogos/4.webp",
       alt: "hospital4",
     },
   ];
