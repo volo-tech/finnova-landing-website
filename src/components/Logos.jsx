@@ -45,8 +45,6 @@ export default function Logos() {
               <div
                 key={i}
                 className="flex-[0_0_30%] md:flex-[0_0_20%] lg:flex-[0_0_10%] flex items-center justify-center"
-                data-aos="fade-up"
-                data-aos-delay={i * 100}
               >
                 <Image
                   src={t.logo}

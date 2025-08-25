@@ -53,7 +53,7 @@ export default function ContactForm() {
               acceptCharset="UTF-8"
               encType="multipart/form-data"
               onSubmit={handleSubmit}
-              className="space-y-4 md:gap-4"
+              className="space-y-4 md:gap-4 pb-2 md:pb-0"
             >
               <div className="md:space-y-2 flex md:flex-row flex-col justify-between gap-4">
                 {/* Name */}

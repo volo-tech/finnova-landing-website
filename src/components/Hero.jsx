@@ -25,7 +25,7 @@ export default function Hero() {
   ]);
 
   return (
-    <section className="md:mb-2 md:my-4 mx-auto" aria-label="Hero Section">
+    <section className="md:mb-2 md:my-4 mx-auto py-2" aria-label="Hero Section">
       {/* Desktop carousel */}
       <div className="hidden md:block overflow-hidden" ref={emblaRefDesktop}>
         <div className="flex">
