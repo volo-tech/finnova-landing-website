@@ -6,19 +6,19 @@ import Image from "next/image";
 export default function Logos() {
   const testimonials = [
     {
-      logo: "/hospitalLogos/HealingHands.png",
+      logo: "/hospitalLogos/1.png",
       alt: "hospital1",
     },
     {
-      logo: "/hospitalLogos/Lopmudra.png",
+      logo: "/hospitalLogos/2.jpg",
       alt: "hospital2",
     },
     {
-      logo: "/hospitalLogos/motherland.jpg",
+      logo: "/hospitalLogos/3.png",
       alt: "hospital3",
     },
     {
-      logo: "/hospitalLogos/ShreeDental.jpg",
+      logo: "/hospitalLogos/4.png",
       alt: "hospital4",
     },
   ];
@@ -34,7 +34,7 @@ export default function Logos() {
           breakpoints={{
             0: { slidesPerView: 2 }, // mobile
             640: { slidesPerView: 3 }, // tablet
-            1024: { slidesPerView: 5 }, // desktop
+            1024: { slidesPerView: 4 }, // desktop
           }}
         >
           {testimonials.map((t, i) => (
@@ -51,9 +51,9 @@ export default function Logos() {
                 <Image
                   src={t.logo}
                   alt={t.alt}
-                  width={80}
-                  height={80}
-                  className="object-contain"
+                  width={120}
+                  height={120}
+                  className="object-contain ransition-transform duration-300 hover:scale-110 md:grayscale md:hover:grayscale-0"
                 />
               </div>
             </SwiperSlide>

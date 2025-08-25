@@ -15,7 +15,8 @@ export default function HowToApply() {
               className="text-2xl text-purpleSecondary mb-5"
               data-aos-delay="100"
             >
-              Get Your Medical Loan In <br className="md:hidden" />{" "}
+              Easy Patient Financing in
+              <br className="md:hidden" />{" "}
               <span className="font-bold">3 Quick Steps</span>
             </h5>
           </div>
@@ -27,7 +28,7 @@ export default function HowToApply() {
             data-aos-delay="200"
           >
             <img
-              src="3-Steps.png"
+              src="3-Steps-Hospital.png"
               alt="3 Steps to Apply"
               className="mx-auto max-w-sm w-full"
             />

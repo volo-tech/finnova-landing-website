@@ -51,8 +51,8 @@ export default function Footer() {
           {/* Disclaimer */}
           <p className="text-gray-500 text-xs leading-relaxed">
             *All financing is subject to eligibility criteria, verification, and
-            approval. Terms and conditions apply. The information provided is
-            not a substitute for professional advice.
+            approval. Terms and conditions apply. The information provided here
+            is not a substitute for professional advice.
           </p>
         </div>
       </div>

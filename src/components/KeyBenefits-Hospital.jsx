@@ -2,17 +2,17 @@ export default function KeyBenefits() {
   const benefits = [
     {
       text: "Quick Loan Disbursement",
-      icon: "/icons/analysis_15225698.png",
+      icon: "/icons/KeyBenefits - Hospital/QLD.png",
       delay: 100,
     },
     {
       text: "24-Hour Settlement",
-      icon: "/icons/stopwatch_1511951.png",
+      icon: "/icons/KeyBenefits - Hospital/24hr.png",
       delay: 100,
     },
     {
       text: "Instant Eligibility Check",
-      icon: "/icons/tool_10225688.png",
+      icon: "/icons/KeyBenefits - Hospital/instant.png",
       delay: 100,
     },
   ];

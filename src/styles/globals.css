@@ -22,3 +22,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+h1,
+h2
+{
+  font-family: "Feilds";
+  src: url("/fonts/fonnts.com-Fields-Display-.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+}

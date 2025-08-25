@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import KeyBenefits from "../components/KeyBenefits-Hospital";
 import Testimonials from "../components/Testimonials-Hospital";
-import HowToApply from "../components/HowToApply";
+import HowToApply from "../components/HowToApply-Hosptial";
 import AboutUs from "../components/AboutUs";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";

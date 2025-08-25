@@ -4,10 +4,10 @@ export default function AboutUs() {
       className="py-8 bg-purpleSecondary mx-auto md:px-8 text-white"
       id="about"
     >
-      <div className="container mx-auto max-w-6xl text-start pl-2 md:pl-0">
+      <div className="container mx-auto max-w-7xl text-start pl-2 md:pl-0">
         {/* Section Title */}
         <h2
-          className="inline-block text-2xl md:text-4xl font-bold text-white bg-purplePrimary px-4 py-2 mb-6 -ml-4 rounded-md"
+          className="inline-block text-2xl md:text-4xl font-bold text-white bg-purplePrimary md:bg-transparent px-4 py-2 mb-6 -ml-4 rounded-md"
           data-aos="fade-up"
         >
           About Us
