@@ -4,7 +4,7 @@ import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
+import useAnalytics from "@/hooks/useAnalytics"; // analytics
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -14,6 +14,7 @@ export default function Header() {
     pathname === "/hospitals"
       ? { href: "/", label: "For Patients" }
       : { href: "/hospitals", label: "For Hospitals" };
+  const { trackEvent } = useAnalytics();
 
   return (
     <header className="bg-white shadow-sm relative z-50">
@@ -34,18 +35,21 @@ export default function Header() {
           <a
             href="#home"
             className="text-purpleSecondary hover:text-purplePrimary"
+            onClick={() => trackEvent("Header Home Link")}
           >
             Home
           </a>
           <a
             href="#about"
             className="text-purpleSecondary hover:text-purplePrimary"
+            onClick={() => trackEvent("Header About Link")}
           >
             About
           </a>
           <a
             href="#stats"
             className="text-purpleSecondary hover:text-purplePrimary"
+            onClick={() => trackEvent("Header Services Link")}
           >
             Services
           </a>
@@ -53,6 +57,7 @@ export default function Header() {
           <a
             href={extraNav.href}
             className="text-purpleSecondary hover:text-purplePrimary"
+            onClick={() => trackEvent("Header " + extraNav.label + " Link")}
           >
             {extraNav.label}
           </a>
@@ -60,7 +65,10 @@ export default function Header() {
             href="#contact"
             className="text-purpleSecondary hover:text-purplePrimary"
           >
-            <button className="bg-pinkCTA text-white rounded-full px-4 py-2">
+            <button
+              onClick={() => trackEvent("Header Contact Us Button")}
+              className="bg-pinkCTA text-white rounded-full px-4 py-2"
+            >
               Contact Us
             </button>
           </a>
@@ -69,7 +77,10 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-2xl text-darkGray"
-          onClick={() => setIsOpen(true)}
+          onClick={() => {
+            setIsOpen(true);
+            trackEvent("Mobile Menu Open");
+          }}
         >
           <HiMenu />
         </button>
@@ -80,7 +91,10 @@ export default function Header() {
         className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
-        onClick={() => setIsOpen(false)}
+        onClick={() => {
+          setIsOpen(false);
+          trackEvent("Mobile Menu Overlay Click");
+        }}
       ></div>
 
       {/* Off-canvas Menu */}
@@ -93,45 +107,66 @@ export default function Header() {
           <h2 className="text-lg font-bold text-purplePrimary">Menu</h2>
           <button
             className="text-2xl text-purpleSecondary"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent("Mobile Menu Close");
+            }}
           >
             <HiX />
           </button>
         </div>
+
         <nav className="flex flex-col space-y-4 p-4">
           <a
             href="#home"
             className="text-purpleSecondary hover:text-purplePrimary"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent("Nav: Home");
+            }}
           >
             Home
           </a>
           <a
             href="#about"
             className="text-purpleSecondary hover:text-purplePrimary"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent("Nav: About");
+            }}
           >
             About
           </a>
           <a
             href="#stats"
             className="text-purpleSecondary hover:text-purplePrimary"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent("Nav: Services");
+            }}
           >
             Services
           </a>
+
           {/* dynamic link */}
           <a
             href={extraNav.href}
             className="text-purpleSecondary hover:text-purplePrimary"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent(`Nav: ${extraNav.label}`);
+            }}
           >
             {extraNav.label}
           </a>
+
           <a
             href="#contact"
             className="text-purpleSecondary hover:bg-purplePrimary mx-auto md:mx-0"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent("Nav: Contact Us");
+            }}
           >
             <button className="bg-pinkCTA text-white rounded-full mt-4 md:mt-0 px-4 py-2">
               Contact Us

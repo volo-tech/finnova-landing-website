@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import useAnalytics from "@/hooks/useAnalytics";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -11,6 +12,7 @@ export default function ContactForm() {
   const [city, setCity] = useState("");
   const [sourceUrl, setSourceUrl] = useState("");
   const [hospitalId, setHospitalId] = useState("");
+  const { trackEvent } = useAnalytics();
 
   useEffect(() => {
     const hospitalQP = searchParams.get("hospital") || "";
@@ -117,6 +119,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 className="px-8 font-bold py-2 bg-pinkCTA text-white rounded-full hover:bg-blue-700"
+                onClick={() => trackEvent("Submit Button Clicked")}
               >
                 Contact Us
               </button>

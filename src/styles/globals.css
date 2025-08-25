@@ -26,8 +26,8 @@ html {
 h1,
 h2
 {
-  font-family: "Feilds";
-  src: url("/fonts/fonnts.com-Fields-Display-.otf") format("otf");
+  font-family: "sitka";
+  src: url("/fonts/sitka-small-815.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
 }
