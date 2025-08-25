@@ -6,20 +6,20 @@ import Image from "next/image";
 export default function Logos() {
   const testimonials = [
     {
-      logo: "/hospitalLogos/1.webp",
-      alt: "hospital1",
-    },
-    {
-      logo: "/hospitalLogos/2.webp",
-      alt: "hospital2",
-    },
-    {
       logo: "/hospitalLogos/3.webp",
       alt: "hospital3",
     },
     {
       logo: "/hospitalLogos/4.webp",
       alt: "hospital4",
+    },
+    {
+      logo: "/hospitalLogos/1.webp",
+      alt: "hospital1",
+    },
+    {
+      logo: "/hospitalLogos/2.webp",
+      alt: "hospital2",
     },
   ];
 
@@ -50,8 +50,8 @@ export default function Logos() {
                   src={t.logo}
                   alt={t.alt}
                   width={120}
-                  height={120}
-                  className="object-contain ransition-transform duration-300 hover:scale-110 md:grayscale md:hover:grayscale-0"
+                  height={50}
+                  className="object-contain md:transition-transform md:duration-300 md:hover:scale-110 md:grayscale md:hover:grayscale-0"
                 />
               </div>
             </SwiperSlide>
