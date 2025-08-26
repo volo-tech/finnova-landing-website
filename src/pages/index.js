@@ -12,6 +12,7 @@ import StatsBanner from "../components/StatsBanner";
 import Logos from "../components/Logos";
 import AOS from "aos";
 import { useEffect } from "react";
+import Head from "next/head";
 
 function App() {
   useEffect(() => {
@@ -22,7 +23,9 @@ function App() {
   }, []);
   return (
     <>
+      <Head>
       <title>Finnova</title>
+      </Head>
       <main>
         <Header />
         <Hero />

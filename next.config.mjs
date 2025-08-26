@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // ✅ required if using next/image
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;

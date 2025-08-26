@@ -12,6 +12,7 @@ import StatsBanner from "../components/StatsBanner";
 import Logos from "../components/Logos";
 import AOS from "aos";
 import { useEffect } from "react";
+import Head from "next/head";
 
 function App() {
   useEffect(() => {
@@ -22,13 +23,15 @@ function App() {
   }, []);
   return (
     <>
-      <title>Finnova</title>
+      <Head>
+        <title>Finnova - For Hospitals</title>
+      </Head>
       <main>
         <Header />
         <Hero />
         <ContactForm />
         <KeyBenefits />
-        <Testimonials/>
+        <Testimonials />
         <HowToApply />
         <Logos />
         <AboutUs />
