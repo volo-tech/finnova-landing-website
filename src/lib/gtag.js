@@ -4,7 +4,9 @@ export const GA_TRACKING_ID = "G-VD1P6C49YH"; // replace with your GA ID
 // Track pageviews
 export const pageview = (url) => {
   window.gtag("config", GA_TRACKING_ID, {
-    page_path: url,
+    page_path: url, // e.g. /page
+    page_location: window.location.href, // 👈 full URL with query params
+    page_title: document.title,
   });
 };
 

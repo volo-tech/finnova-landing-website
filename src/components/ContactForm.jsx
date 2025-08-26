@@ -72,6 +72,7 @@ export default function ContactForm() {
                   name="PhoneNumber_countrycode"
                   placeholder="10 digit mobile number"
                   maxLength={10}
+                  minLength={10}
                   required
                   className="block w-full md:rounded-xl border-gray-300 shadow-sm bg-bgGray md:bg-white text-black p-2 md:p-4"
                 />
