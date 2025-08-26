@@ -42,7 +42,6 @@ export default function ContactForm() {
         {submitted ? (
           <div className="p-4 bg-green-100 text-green-700 rounded-lg">
             ✅ Thank you! Your form has been submitted successfully.
-            {hospital}, {city}, {sourceUrl}, {hospitalId}
           </div>
         ) : (
           <>

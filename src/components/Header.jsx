@@ -47,11 +47,11 @@ export default function Header() {
             About
           </a>
           <a
-            href="#stats"
+            href="#benefits"
             className="text-purpleSecondary hover:text-purplePrimary"
             onClick={() => trackEvent("Header Services Link")}
           >
-            Services
+            Benefits
           </a>
           {/* dynamic link */}
           <a
@@ -138,14 +138,14 @@ export default function Header() {
             About
           </a>
           <a
-            href="#stats"
+            href="#benefits"
             className="text-purpleSecondary hover:text-purplePrimary"
             onClick={() => {
               setIsOpen(false);
               trackEvent("Nav: Services");
             }}
           >
-            Services
+            Benefits
           </a>
 
           {/* dynamic link */}
