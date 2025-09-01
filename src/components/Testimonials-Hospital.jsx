@@ -9,7 +9,7 @@ export default function Testimonials() {
    {
      name: "Hospital Desk",
      text: "We had a patient consulting us for IVF. They had no insurance or financial back-up. On Finnova’s website I filled up a form to get the patient support. The couple’s cashless treatment was processed seamlessly.",
-     stars: 5,
+     stars: 4,
      disease: "IVF Partner Hospital",
    },
    {
@@ -21,7 +21,7 @@ export default function Testimonials() {
    {
      name: "Doctor from partner hospital",
      text: "We had a patient whose liver had failed. He needed a transplant. The insurance cover was for ₹10 lakh. But the treatment cost was ₹ 16 lakh. The patient had financial back-up and had already used them on ongoing treatment. So, our hospital reached out to Finnova. The procedure was effortless. The response was quick and loan was processed instantly. Thankfully, the treatment was done and the patient has been discharged.",
-     stars: 3,
+     stars: 5,
      disease: "Partner Hospital ",
    },
  ];

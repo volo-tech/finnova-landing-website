@@ -2,7 +2,7 @@
 import useAnalytics from "@/hooks/useAnalytics";
 import { useState } from "react";
 
-export function ReadMoreText({ text, maxLength = 250 }) {
+export function ReadMoreText({ text, maxLength = 200 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { trackEvent } = useAnalytics();
 

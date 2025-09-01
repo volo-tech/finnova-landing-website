@@ -21,7 +21,7 @@ export default function Testimonials() {
    {
      name: "Sumona Vishwakarma",
      text: "I met with an accident. I needed root canal treatment and implants. The expenses were sudden and we had all the family savings on my brother’s admission in MBA. The treatment was urgent as my front teeth were broken. Then the dentist told us about Finnova. I instantly found out I was eligible and the dentists were paid on time! Look at me now, I am smiling again with confidence.",
-     stars: 3,
+     stars: 5,
      disease: "Dental Support",
    },
    

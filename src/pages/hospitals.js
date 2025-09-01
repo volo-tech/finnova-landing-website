@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero-Hospitals";
 import KeyBenefits from "../components/KeyBenefits-Hospital";
 import Testimonials from "../components/Testimonials-Hospital";
 import HowToApply from "../components/HowToApply-Hosptial";

@@ -28,7 +28,7 @@ export default function HowToApply() {
             data-aos-delay="200"
           >
             <img
-              src="3-Steps-Hospital.png"
+              src="3-Steps.png"
               alt="3 Steps to Apply"
               className="mx-auto max-w-sm w-full"
             />

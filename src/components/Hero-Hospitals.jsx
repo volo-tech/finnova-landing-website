@@ -5,17 +5,15 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 const desktopImages = [
-  "/heroImages/D1.webp",
-  "/heroImages/D2.webp",
-  "/heroImages/D3.webp",
-  "/heroImages/D4.webp",
+  "/heroImages/hospitals/D1.webp",
+  "/heroImages/hospitals/D2.webp",
+  "/heroImages/hospitals/D3.webp",
 ];
 
 const mobileImages = [
-  "/heroImages/M1.webp",
-  "/heroImages/M2.webp",
-  "/heroImages/M3.webp",
-  "/heroImages/M4.webp",
+  "/heroImages/hospitals/M1.webp",
+  "/heroImages/hospitals/M2.webp",
+  "/heroImages/hospitals/M3.webp",
 ];
 
 export default function Hero() {
