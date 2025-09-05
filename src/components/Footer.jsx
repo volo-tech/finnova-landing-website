@@ -50,7 +50,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-lightBlue hover:underline font-semibold"
             >
-              Volohealth Services Private Limited
+              Volo Health Services Private Limited
             </a>{" "}
             – All rights reserved.
           </p>

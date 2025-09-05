@@ -18,119 +18,71 @@ export default function PrivacyModal({ onClose }) {
         {/* Content */}
         <div className="max-h-[70vh] overflow-y-auto text-sm text-gray-700 space-y-5 leading-relaxed">
           <p>
-            At <strong>Finnova</strong>, we take your privacy seriously and are
-            fully committed to protecting the personal information you share
-            with us. This Privacy Policy explains how we collect, use, store,
-            and safeguard your data when you use our website and services.
+            At Finnova, we take your privacy seriously and are fully committed
+            to protecting the personal information you share with us. This
+            privacy policy outlines how we collect, use, store, and safeguard
+            your data when you use our website and services. It applies to our
+            main domain and all its subdomains. This policy governs the data and
+            information collected from users when they visit, interact with, or
+            register on our website. It applies to all services offered through
+            our online platform and ensures that all data shared is handled in
+            compliance with legal and ethical standards. By continuing to use
+            our website, you agree to the practices described in this policy. If
+            you do not agree with any part of this policy, we request you to
+            discontinue using the website. For any questions or concerns, you
+            may contact us at support@volohealth.in.
           </p>
-
+          <h2 className="text-lg">Information We Collect</h2>
           <p>
-            It applies to our main domain and all subdomains, and governs the
-            data collected when you visit, interact with, or register on our
-            website. By continuing to use our platform, you agree to the
-            practices described in this policy. If you do not agree, please
-            discontinue using the website.
+            When you interact with our platform, you may be required to provide
+            personal information such as your name, contact details,
+            identification documents, address, family member details and other
+            relevant documents. We may also collect technical information
+            including your IP address, browser type, device identifiers,
+            geolocation data, and cookies to ensure security and seamless
+            functionality. Additional information such as your medical records,
+            nominee details or social media profile information may also be
+            collected if relevant to the service you seek.
           </p>
-
-          {/* Section 1 */}
-          <h3 className="font-semibold text-base">1. Information We Collect</h3>
-          <ul className="list-disc list-inside space-y-1">
-            <li>
-              <strong>Personal Information:</strong> Name, contact details,
-              identification documents, address, family member details, and
-              other relevant documents.
-            </li>
-            <li>
-              <strong>Technical Information:</strong> IP address, browser type,
-              device identifiers, geolocation data, and cookies to ensure
-              security and functionality.
-            </li>
-            <li>
-              <strong>Additional Information:</strong> Medical records, nominee
-              details, or social media profile information (if relevant to the
-              services you seek).
-            </li>
-          </ul>
-
-          {/* Section 2 */}
-          <h3 className="font-semibold text-base">2. Usage of Information</h3>
+          <h2 className="text-lg">Usage of Information</h2>
           <p>
-            We use the information you provide solely for legitimate purposes,
-            including:
+            All information shared with us is used only for the legitimate
+            purpose of offering our services. We use your details to verify your
+            identity, communicate with you, process your service requests and
+            share information with relevant third-party service providers such
+            as insurance companies and financers wherever required. We do not
+            use your information for marketing purposes without your consent nor
+            do we share it with any unrelated third-party organizations. Your
+            information helps us improve service delivery, enhance our
+            platform’s security and ensure a smooth experience while using
+            Finnova.
           </p>
-          <ul className="list-disc list-inside space-y-1">
-            <li>Verifying your identity and processing service requests.</li>
-            <li>
-              Communicating with you and sharing information with relevant
-              third-party providers (e.g., insurance companies, financers).
-            </li>
-            <li>
-              Improving service delivery, enhancing platform security, and
-              ensuring a smooth experience.
-            </li>
-          </ul>
+          <h2 className="text-lg">Data Security and Retention</h2>
           <p>
-            We <strong>do not</strong> use your information for marketing
-            without your consent and we <strong>never</strong> share it with
-            unrelated third parties.
+            We are committed to maintain the confidentiality and integrity of
+            your data. Our platform is equipped with advanced data security
+            protocols, encryption tools, and firewalls to prevent unauthorized
+            access and data breaches. Your personal data is retained only for as
+            long as it serves the purpose for which it was collected or as
+            mandated by applicable law. In general, we retain data for a period
+            of up to two years from your registration or last service
+            interaction, unless you renew your relationship with us.
           </p>
-
-          {/* Section 3 */}
-          <h3 className="font-semibold text-base">
-            3. Data Security and Retention
-          </h3>
+          <h2 className="text-lg">User Rights and Updates</h2>
           <p>
-            We are committed to maintaining the confidentiality and integrity of
-            your data through advanced security protocols, encryption tools, and
-            firewalls to prevent unauthorized access.
+            You have full rights over your personal data, including the right to
+            access, correct or request deletion of your information. You may
+            update your profile through the platform or by writing to us. We may
+            revise this privacy policy from time to time to align with legal
+            requirements or improve clarity. Any such updates will be published
+            on our website along with the date of the last revision.
           </p>
-          <ul className="list-disc list-inside space-y-1">
-            <li>
-              <strong>Retention Period:</strong> Personal data is stored only as
-              long as it is required to serve its purpose or as mandated by law.
-            </li>
-            <li>
-              By default, data is retained for <strong>up to two years</strong>{" "}
-              from registration or last service interaction, unless the
-              relationship is renewed.
-            </li>
-          </ul>
-
-          {/* Section 4 */}
-          <h3 className="font-semibold text-base">
-            4. User Rights and Updates
-          </h3>
-          <p>You have full rights over your personal data, including:</p>
-          <ul className="list-disc list-inside space-y-1">
-            <li>Access, correct, or request deletion of your data.</li>
-            <li>
-              Update your profile through the platform or by contacting us.
-            </li>
-          </ul>
+          <h2 className="text-lg">Contact Us</h2>
           <p>
-            This Privacy Policy may be updated from time to time to reflect
-            legal requirements or improve clarity. Updates will be published on
-            our website with the revision date.
-          </p>
-
-          {/* Section 5 */}
-          <h3 className="font-semibold text-base">5. Contact Us</h3>
-          <p>
-            For concerns, questions, or requests regarding your data or this
-            Privacy Policy, please contact us:
-          </p>
-          <p>
-            📧{" "}
-            <a
-              href="mailto:support@volohealth.in"
-              className="text-lightBlue underline"
-            >
-              support@volohealth.in
-            </a>
-          </p>
-          <p>
-            We will make every effort to respond in a timely and transparent
-            manner.
+            If you have any concerns, questions, or requests regarding your data
+            or this privacy policy, you can reach us directly at
+            support@volohealth.in. We will make every effort to address your
+            concerns in a timely and transparent manner.
           </p>
         </div>
       </div>
