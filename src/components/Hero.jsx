@@ -8,14 +8,12 @@ const desktopImages = [
   "/heroImages/D1.webp",
   "/heroImages/D2.webp",
   "/heroImages/D3.webp",
-  "/heroImages/D4.webp",
 ];
 
 const mobileImages = [
   "/heroImages/M1.webp",
   "/heroImages/M2.webp",
   "/heroImages/M3.webp",
-  "/heroImages/M4.webp",
 ];
 
 export default function Hero() {
