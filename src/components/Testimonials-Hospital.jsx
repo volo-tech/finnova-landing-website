@@ -8,19 +8,19 @@ export default function Testimonials() {
  const testimonials = [
    {
      name: "Hospital Desk",
-     text: "We had a patient consulting us for IVF. They had no insurance or financial back-up. On Finnova’s website I filled up a form to get the patient support. The couple’s cashless treatment was processed seamlessly.",
+     text: "We had a patient consulting us for IVF. They had no insurance or financial back-up. On Finnova’s website we filled up a form to get the patient support. The couple’s cashless treatment was processed seamlessly.",
      stars: 4,
      disease: "IVF Partner Hospital",
    },
    {
      name: "Doctor Desk",
-     text: "There was a patient for hair transplant. He was planning to get married and wanted the treatment but lacked the finances. I couldn’t give him a heavy discount, so I started looking for other options. I found out about Finnova. It is powered by Volo Health, a reputable and trusted brand. I contacted them with the patient details. Finnova responded the same day with how much the patient was eligible for. The loan was disbursed, and the treatment was covered. Because of this I could retain my customer.",
+     text: "A patient wanted a hair transplant before his wedding but lacked funds. Instead of giving a heavy discount, I reached out to Finnova, a dynamic financial platform by Volo Health Services. The eligibility check was instant, the loan was disbursed the same day, and I could retain my patient.",
      stars: 5,
      disease: "Hair Transplant Partner Clinic ",
    },
    {
      name: "Doctor from partner hospital",
-     text: "We had a patient whose liver had failed. He needed a transplant. The insurance cover was for ₹10 lakh. But the treatment cost was ₹ 16 lakh. The patient had financial back-up and had already used them on ongoing treatment. So, our hospital reached out to Finnova. The procedure was effortless. The response was quick and loan was processed instantly. Thankfully, the treatment was done and the patient has been discharged.",
+     text: "We had a patient whose liver had failed. He needed a transplant. The insurance cover was for ₹10 lakh. But the treatment cost was ₹16 lakh. The patient had already exhausted his financial resources on ongoing treatment. So, our hospital reached out to Finnova. Finnova stepped in with an effortless and fast loan process. Thanks to them, we could go ahead with the surgery, and the patient has now been discharged.",
      stars: 5,
      disease: "Partner Hospital ",
    },

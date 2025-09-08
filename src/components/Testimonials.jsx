@@ -8,7 +8,7 @@ export default function Testimonials() {
  const testimonials = [
    {
      name: "Jitendra and Priya Bhargav",
-     text: "Preparing to become parents was overwhelming- the procedures, the wait and especially, the cost. We were in two minds till our doctor suggested Finnova’s smart EMI option. We got the loan instantly. After 2 months of treatment, we are expecting! We could come so far because of Finnova.",
+     text: "Preparing to become parents was overwhelming - the procedures, the wait and especially, the cost. We were in two minds till our doctor suggested Finnova’s smart EMI option. We got the loan instantly. After 2 months of treatment, we are expecting! We could come so far because of Finnova.",
      stars: 5,
      disease: "IVF Couple",
    },
@@ -20,11 +20,10 @@ export default function Testimonials() {
    },
    {
      name: "Sumona Vishwakarma",
-     text: "I met with an accident. I needed root canal treatment and implants. The expenses were sudden and we had all the family savings on my brother’s admission in MBA. The treatment was urgent as my front teeth were broken. Then the dentist told us about Finnova. I instantly found out I was eligible and the dentists were paid on time! Look at me now, I am smiling again with confidence.",
+     text: "I met with an accident. I needed root canal treatment and implants. The expenses were sudden and we had exhausted all the family savings on my brother’s admission in MBA. The treatment was urgent as my front teeth were broken. Then the dentist told us about Finnova. I instantly found out I was eligible for a loan and the dentists were paid on time! Look at me now, I am smiling again with confidence.",
      stars: 5,
      disease: "Dental Support",
    },
-   
  ];
 
   return (

@@ -20,28 +20,67 @@ export default function AboutUs() {
           data-aos-delay="200"
         >
           <p className="text-sm md:text-lg mb-2">
-            <strong>
+            <>
               {" "}
-              Finnova provides lending solutions to those who delay treatment
-              because of out of pocket expenses.
-            </strong>
+              At <strong>Finnova</strong>, we believe that access to healthcare
+              should never be compromised due to liquidity constraints. By
+              bridging the gap between urgent medical expenses and limited or no
+              insurance coverage, Finnova enables hospitals and patients to
+              maintain continuity of care without funding shortfalls.
+            </>
           </p>
 
           <p className="text-sm md:text-lg mb-2 ">
-            Finnova provides fast, flexible financing that goes beyond
-            traditional financing in healthcare. Our hassle-free, patient-first
-            approach to making care affordable and timely.
+            <>
+              With 62% of healthcare expenses in India paid out-of-pocket,
+              households often face cash flow strain, asset liquidation, or
+              deferred treatment. Finnova addresses these challenges by offering
+              instant credit assessment, direct hospital settlements, and
+              structured repayment options—ensuring treatment affordability
+              without compromising financial stability.
+            </>
           </p>
 
-          <p className="text-sm md:text-lg leading-relaxed mb-2 ">
-            Finnova is partnering with over 5000 hospitals and has provided
-            financial management to over 30,000 patients and their families.{" "}
-            <strong>
-              A platform developed by Volo Health Services, a leading health
-              provider, we are touching more than 2.5 million lives across
-              programmes.
-            </strong>
-          </p>
+          <div className="space-y-2 text-sm md:text-lg">
+            {/* Platform Strength */}
+            <div>
+              <p className="font-semibold">
+                Our platform strengthens the healthcare ecosystem by:
+              </p>
+              <ul className="list-disc list-inside pl-4">
+                <li>
+                  Enhancing patient liquidity through immediate financing
+                  solutions
+                </li>
+                <li>
+                  Reducing bad debt exposure for hospitals via timely settlement
+                </li>
+                <li>
+                  Preserving working capital for families by preventing asset
+                  liquidation
+                </li>
+                <li>
+                  Expanding healthcare access through inclusive and transparent
+                  patient financing
+                </li>
+              </ul>
+            </div>
+
+            {/* Finnova Impact */}
+            <div>
+              <p className="font-semibold">
+                Finnova Impact:
+              </p>
+              <ul className="list-disc list-inside pl-4">
+                <li>30,000+ patients supported</li>
+                <li>5,000+ partner hospitals across India</li>
+                <li>
+                  Platform developed by Volo Health Services, impacting 2.5M+
+                  lives
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

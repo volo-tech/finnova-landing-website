@@ -34,9 +34,9 @@ export default function Footer() {
 
           {/* Disclaimer */}
           <p className="text-gray-500 text-xs md:text-sm leading-relaxed max-w-xl">
-            *All financing is subject to eligibility criteria, verification, and
-            approval. Terms and conditions apply. The information provided here
-            is not a substitute for professional advice.
+            *Financing is subject to eligibility, verification, and approval.
+            Terms and conditions apply. The information provided is not a
+            substitute for professional medical, financial, or legal advice.
           </p>
         </div>
 
@@ -50,9 +50,9 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-lightBlue hover:underline font-semibold"
             >
-              Volo Health Services Private Limited
+              Volo Health Services Private Limited®.
             </a>{" "}
-            – All rights reserved.
+            All rights reserved.
           </p>
         </div>
       </div>

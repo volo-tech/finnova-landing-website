@@ -15,7 +15,7 @@ export default function HowToApply() {
               className="text-2xl text-purpleSecondary mb-5"
               data-aos-delay="100"
             >
-              Easy Patient Financing in
+              Patient Financing in
               <br className="md:hidden" />{" "}
               <span className="font-bold">3 Quick Steps</span>
             </h5>

@@ -28,8 +28,10 @@ export default function KeyBenefits() {
           className="w-full md:w-auto md:mx-auto md:text-left whitespace-nowrap border-b-2 md:border-b-0 border-bgGray py-4 px-2"
           data-aos="fade-up"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-purpleSecondary">
+          <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left text-purpleSecondary">
             Key Benefits
+            <br />
+            <span className="">Why choose Finnova?</span>
           </h1>
         </div>
 
