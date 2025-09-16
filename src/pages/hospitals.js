@@ -13,6 +13,7 @@ import Logos from "../components/Logos";
 import AOS from "aos";
 import { useEffect } from "react";
 import Head from "next/head";
+import FAQ from "../components/FAQs-Hospitals";
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
         <HowToApply />
         <Logos />
         <AboutUs />
+        <FAQ/>
         <ContactBanner />
         <ContactBannerSticky />
         <Footer />

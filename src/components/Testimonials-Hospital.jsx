@@ -7,22 +7,34 @@ import { ReadMoreText } from "../ui/ReadMoreText";
 export default function Testimonials() {
  const testimonials = [
    {
-     name: "Hospital Desk",
-     text: "We had a patient consulting us for IVF. They had no insurance or financial back-up. On Finnova’s website we filled up a form to get the patient support. The couple’s cashless treatment was processed seamlessly.",
+     name: "Shree Dental Speciality Hospital, Mumbai",
+     text: "We never imagined a medical finance service could be this fast and seamless – approvals up to ₹6 lakhs, no hassle. Finnova is truly helping us grow.",
      stars: 4,
-     disease: "IVF Partner Hospital",
+     disease: "Shree Dental Speciality Hospital, Mumbai",
    },
    {
-     name: "Doctor Desk",
-     text: "A patient wanted a hair transplant before his wedding but lacked funds. Instead of giving a heavy discount, I reached out to Finnova, a dynamic financial platform by Volo Health Services. The eligibility check was instant, the loan was disbursed the same day, and I could retain my patient.",
+     name: "Dr. Vijay",
+     text: "We’ve added 10–12 new admissions a month since we started using Finnova. Our monthly business has grown by 20–25%.",
      stars: 5,
-     disease: "Hair Transplant Partner Clinic ",
+     disease: "SVS Hospital, Hyderabad",
    },
    {
-     name: "Doctor from partner hospital",
-     text: "We had a patient whose liver had failed. He needed a transplant. The insurance cover was for ₹10 lakh. But the treatment cost was ₹16 lakh. The patient had already exhausted his financial resources on ongoing treatment. So, our hospital reached out to Finnova. Finnova stepped in with an effortless and fast loan process. Thanks to them, we could go ahead with the surgery, and the patient has now been discharged.",
+     name: "Mr. Rahul ",
+     text: "A premium client received instant approval for ₹5 lakhs. Finnova has made patient conversion much easier. It's fast, transparent, and extremely user-friendly.",
      stars: 5,
-     disease: "Partner Hospital ",
+     disease: "Lifero Skin & Hair Clinic, Pune",
+   },
+   {
+     name: "Dr. Pradeep ",
+     text: "Over the past few months, Finnova has helped us support patients who otherwise would have compromised on treatment. It’s enabled us to offer quality care without compromise.",
+     stars: 5,
+     disease: "Shanti Hospital, Mumbai ",
+   },
+   {
+     name: "Dr. Avadhut  ",
+     text: "It’s truly 100% digital – we’ve seen approvals at 11 PM, even during holidays, without a single paper document. That’s when we knew we could trust this system.",
+     stars: 5,
+     disease: "Lopmudra Hospital, Pune ",
    },
  ];
 
