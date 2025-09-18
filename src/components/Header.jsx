@@ -53,6 +53,13 @@ export default function Header() {
           >
             Benefits
           </a>
+          <a
+            href="#faq"
+            className="text-purpleSecondary hover:text-purplePrimary"
+            onClick={() => trackEvent("Header FAQ Link")}
+          >
+            FAQs
+          </a>
           {/* dynamic link */}
           <a
             href={extraNav.href}
@@ -147,7 +154,16 @@ export default function Header() {
           >
             Benefits
           </a>
-
+          <a
+            href="#faq"
+            className="text-purpleSecondary hover:text-purplePrimary"
+            onClick={() => {
+              setIsOpen(false);
+              trackEvent("Nav: FAQ");
+            }}
+          >
+            FAQs
+          </a>
           {/* dynamic link */}
           <a
             href={extraNav.href}
