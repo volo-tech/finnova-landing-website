@@ -7,23 +7,35 @@ import useAnalytics from "@/hooks/useAnalytics";
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const searchParams = useSearchParams();
+  const { trackEvent } = useAnalytics();
 
+  // visible values
   const [hospital, setHospital] = useState("");
   const [city, setCity] = useState("");
   const [sourceUrl, setSourceUrl] = useState("");
   const [hospitalId, setHospitalId] = useState("");
-  const { trackEvent } = useAnalytics();
+
+  // flags that record whether the field was prefilled at mount time
+  const [isHospitalPrefilled, setIsHospitalPrefilled] = useState(false);
+  const [isCityPrefilled, setIsCityPrefilled] = useState(false);
 
   useEffect(() => {
     const hospitalQP = searchParams.get("hospital") || "";
     const cityQP = searchParams.get("city") || "";
-    const sourceQP = searchParams.get("sourceUrl") || window.location.href; // default to current page
+    const sourceQP = searchParams.get("sourceUrl") || (typeof window !== "undefined" ? window.location.href : "");
     const hospitalIdQP = searchParams.get("hospitalId") || "";
 
+    // set visible values
     setHospital(hospitalQP);
     setCity(cityQP);
     setSourceUrl(sourceQP);
     setHospitalId(hospitalIdQP);
+
+    // set "prefilled" flags based only on initial query param values.
+    // These flags should NOT change when the user types.
+    setIsHospitalPrefilled(!!hospitalQP);
+    setIsCityPrefilled(!!cityQP);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams]);
 
   const handleSubmit = () => {
@@ -85,9 +97,10 @@ export default function ContactForm() {
                   required
                   value={hospital}
                   onChange={(e) => setHospital(e.target.value)}
-                  readOnly={!!hospital}
+                  disabled={isHospitalPrefilled}
+                  aria-disabled={isHospitalPrefilled}
                   className={`block w-full md:rounded-xl border-gray-300 shadow-sm p-2 md:p-4 ${
-                    hospital
+                    isHospitalPrefilled
                       ? "bg-gray-200 cursor-not-allowed text-gray-700"
                       : "bg-bgGray md:bg-white text-black"
                   }`}
@@ -102,18 +115,23 @@ export default function ContactForm() {
                   required
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
-                  readOnly={!!city}
+                  disabled={isCityPrefilled}
+                  aria-disabled={isCityPrefilled}
                   className={`block w-full md:rounded-xl border-gray-300 shadow-sm p-2 md:p-4 mb-2 ${
-                    city
+                    isCityPrefilled
                       ? "bg-gray-200 cursor-not-allowed text-gray-700"
                       : "bg-bgGray md:bg-white text-black"
                   }`}
                 />
               </div>
 
-              {/* 🔥 Hidden fields */}
+              {/* Hidden fields for form submission */}
               <input type="hidden" name="MultiLine" value={sourceUrl} />
               <input type="hidden" name="SingleLine3" value={hospitalId} />
+
+              {/* If a field was disabled, disabled fields won't be submitted — add hidden inputs so Zoho receives them */}
+              {isHospitalPrefilled && <input type="hidden" name="SingleLine1" value={hospital} />}
+              {isCityPrefilled && <input type="hidden" name="SingleLine" value={city} />}
 
               {/* Submit */}
               <button
